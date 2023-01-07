@@ -34,6 +34,7 @@ namespace Shop.Web.Controllers
             _orderService = orderService;
         }
 
+       
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
